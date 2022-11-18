@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Valhalla-Wait/Schedule-board_backend#readme",
   "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/config": "^3.3.0",
     "@types/express-validator": "^3.0.0",
     "@types/jsonwebtoken": "^8.5.9",
