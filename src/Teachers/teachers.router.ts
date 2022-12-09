@@ -1,5 +1,5 @@
 import express from 'express'
-import { TeachersController } from '../controllers/teachers';
+import { TeachersController } from './teachers.controller';
 export const teachersRouter = express.Router()
 
 teachersRouter.get('/get', TeachersController.getTeachers)

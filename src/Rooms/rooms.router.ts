@@ -1,4 +1,4 @@
-import { RoomsController } from '../controllers/rooms';
+import { RoomsController } from './rooms.controller';
 import express from 'express'
 export const roomsRouter = express.Router()
 

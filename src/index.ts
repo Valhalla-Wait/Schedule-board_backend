@@ -1,13 +1,13 @@
 import mysql from 'mysql2/promise';
 import express from "express"
 import config from 'config'
-import {scheduleRouter} from './routes/schedule.router'
-import { roomsRouter } from './routes/rooms.router';
-import { groupsRouter } from './routes/groups.router';
-import { lessonsRouter } from './routes/lessons.router';
-import { teachersRouter } from './routes/teachers.router';
-import { scheduledLessonsRouter } from './routes/sheduled_lessons.router';
-import { authRouter } from './routes/auth.router';
+import {scheduleRouter} from './Schedule/schedule.router'
+import { roomsRouter } from './Rooms/rooms.router';
+import { groupsRouter } from './Groups/groups.router';
+import { lessonsRouter } from './Lessons/lessons.router';
+import { teachersRouter } from './Teachers/teachers.router';
+import { scheduledLessonsRouter } from './Scheduled_lessons/sheduled_lessons.router';
+import { authRouter } from './Auth/auth.router';
 import { corsMiddleware } from './middleware/cors.middleware';
 
 const PORT = config.get('PORT')

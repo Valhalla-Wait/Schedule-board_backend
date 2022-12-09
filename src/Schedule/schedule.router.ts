@@ -1,4 +1,4 @@
-import { ScheduleController } from './../controllers/schedule';
+import { ScheduleController } from './schedule.controller';
 import Router from 'express'
 export const scheduleRouter = Router()
 

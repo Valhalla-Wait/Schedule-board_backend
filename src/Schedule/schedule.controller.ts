@@ -1,4 +1,4 @@
-import { connect } from './../index';
+import { connect } from '../index';
 import type {Response, Request} from 'express'
 
 interface CreateQueryI {

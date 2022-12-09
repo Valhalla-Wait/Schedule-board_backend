@@ -1,6 +1,7 @@
 import express from 'express'
 import { check } from 'express-validator'
-import { AuthController } from '../controllers/auth'
+import { AuthController } from './auth.controller'
+import { authMiddleware } from '../middleware/auth.middleware'
 export const authRouter = express.Router()
 
 authRouter.post('/registration', 
@@ -10,3 +11,4 @@ authRouter.post('/registration',
   ],
   AuthController.registration)
 authRouter.post('/login', AuthController.login)
+authRouter.get('/auth', authMiddleware, AuthController.auth)
